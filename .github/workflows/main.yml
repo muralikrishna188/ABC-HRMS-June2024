@@ -1,8 +1,10 @@
 on:
 
-    label:
+
+    issues:
       types:
-        - created          
+        - opened
+        - labeled                  
 jobs:
     buildjob:
       runs-on: ubuntu-24.04
