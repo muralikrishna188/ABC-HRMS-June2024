@@ -1,12 +1,10 @@
 on:
-
-
-    issues:
-      types:
-        - opened
-        - labeled                  
+    label:
+        types:
+            - created
 jobs:
     buildjob:
-      runs-on: ubuntu-24.04
-      steps:
-        - run: echo "testbuild"
+        runs-on: ubuntu-24.04
+        steps:
+            - run: echo "testbuild"
+             
